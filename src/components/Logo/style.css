@@ -1,0 +1,11 @@
+.App-logo-wrapper {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    overflow: hidden;
+}
+.App-logo-wrapper img {
+    display: flex;
+    width: 100px;
+    height: 75px;
+}
