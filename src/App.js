@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 
-import LogoRender from './components/Logo';
+import Logo from './components/Logo';
+import Navigation from './components/Navigation';
 
 class App extends Component {
-  render() {
-    return (
-        <div className="App">
-            <LogoRender />
-        </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+    }
+
+    componentWillMount() {
+        document.title = this.props.title;
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <Logo />
+                <Navigation />
+            </div>
+        );
+    }
 }
 
 export default App;
