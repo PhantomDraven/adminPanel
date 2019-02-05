@@ -1,0 +1,30 @@
+.main-nav ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.main-nav li{
+  padding: 0 10px;
+  position: relative;
+}
+.main-nav li:after{
+  content:'';
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  top: 50%;
+  right: 0;
+  transform:translate(0,-50%);
+  background:rgba(0,0,0,.2);
+}
+.main-nav li:last-child:after {
+  display: none;
+}
+.main-nav a{
+  text-decoration: none;
+  color:#007fea;
+  text-transform: uppercase;
+  font-weight: 600;
+}
