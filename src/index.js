@@ -4,6 +4,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Firebase, { FirebaseContext } from './firebase';
 
+import ROUTES from './pages/routes';
+
 import Home from './pages/Home';
 import Login from './pages/Login';
 
@@ -14,8 +16,8 @@ ReactDOM.render(
     <FirebaseContext.Provider value={new Firebase()}>
         <BrowserRouter>
             <React.Fragment>
-                <Route exact path="/" component={Home} />
-                <Route path="/login" component={Login} />
+                <Route exact path={ROUTES.HOME} component={Home} />
+                <Route path={ROUTES.LOGIN} component={Login} />
             </React.Fragment>
         </BrowserRouter>
     </FirebaseContext.Provider>
