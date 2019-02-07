@@ -20,6 +20,7 @@ class App extends Component {
     }
 
     componentDidMount() {
+        console.log(this.props.firebase.database);
         this.props.firebase.auth.onAuthStateChanged(authUser => {
             authUser
                 ? this.setState({ isAuth: authUser }, this.redirectToSecure(true))
