@@ -1,0 +1,6 @@
+.admin-register-wrap{
+  max-width: 450px;
+}
+.admin-register-wrap .ant-btn-primary{
+  width: 100%;
+}

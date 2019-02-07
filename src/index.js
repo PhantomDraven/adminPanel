@@ -8,6 +8,7 @@ import ROUTES from './pages/routes';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import './style.css';
 import 'antd/dist/antd.css';
 
@@ -20,6 +21,7 @@ ReactDOM.render(
             <React.Fragment>
                 <Route exact path={ROUTES.HOME} component={Home} />
                 <Route path={ROUTES.LOGIN} component={Login} />
+                <Route path={ROUTES.REGISTER} component={Register} />
             </React.Fragment>
         </BrowserRouter>
     </FirebaseContext.Provider>
