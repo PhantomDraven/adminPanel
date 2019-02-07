@@ -1,0 +1,6 @@
+.admin-login-wrap{
+  max-width: 400px;
+}
+.admin-login-wrap .ant-btn-primary{
+  width: 100%;
+}

@@ -8,6 +8,8 @@ import ROUTES from './pages/routes';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
+import './style.css';
+import 'antd/dist/antd.css';
 
 /** Removed due to test environment */
 // import * as serviceWorker from './serviceWorker';

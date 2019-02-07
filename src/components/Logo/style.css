@@ -1,24 +1,12 @@
 .App-logo-wrapper {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
     overflow: hidden;
-    
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75px;
-}
-.App-logo-wrapper:hover img{
-  transform:scale(1) rotate(45deg);
 }
 
-.App-logo-wrapper img {   
+.App-logo-wrapper img {
+    display: flex;
     width: 100px;
     height: 75px;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform:scale(.8) rotate(0deg);
 }
